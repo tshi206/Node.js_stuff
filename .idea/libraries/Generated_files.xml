@@ -3,10 +3,12 @@
     <properties>
       <sourceFilesUrls>
         <item url="file://$PROJECT_DIR$/dist/index.js" />
+        <item url="file://$PROJECT_DIR$/dist/stuff.js" />
       </sourceFilesUrls>
     </properties>
     <CLASSES>
-      <root url="file://$PROJECT_DIR$/../node_tutorial/dist/index.js" />
+      <root url="file://$PROJECT_DIR$/dist/index.js" />
+      <root url="file://$PROJECT_DIR$/dist/stuff.js" />
     </CLASSES>
     <SOURCES />
   </library>

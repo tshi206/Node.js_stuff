@@ -8,7 +8,7 @@ var adder = function (a, b) {
 
 const pi = 3.1415926;
 
-console.log(counter(["cate", "mike", "james"]));
+//console.log(counter(["cate", "mike", "james"]));
 
 module.exports = {
     counter : counter,
