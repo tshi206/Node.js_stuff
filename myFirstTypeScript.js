@@ -335,7 +335,7 @@ function theSum(x, y, z) {
         (x + y + z) + "<br />");
 }
 var args = [4, 5, 6];
-theSum.apply(void 0, args); //spread operator, works but complaints from the compiler
+//theSum(...args); //spread operator, works but complaints from the compiler
 var Emotion;
 (function (Emotion) {
     Emotion[Emotion["Happy"] = 1] = "Happy";
@@ -345,5 +345,120 @@ var Emotion;
 var myFeeling = Emotion.Sad;
 //is equivalent to
 myFeeling = 2;
+//Functors
+var nums = [1, 2, 3, 4, 5];
+//this is an example of map implementation
+//it is not the one from libraries
+//fn the function, xs the functor (array in this case)
+var map = function (fn) { return function (xs) { return xs.reduce(function (accumulate, val) { return accumulate.concat([fn(val)]); }, []); }; }; //[] the initial value for reduce
+var explicitTypedMap = function (fn) { return function (xs) { return xs.reduce(function (accumulate, val) { return accumulate.concat([fn(val)]); }, []); }; }; //[] the initial value for reduce
+var typeSafeMap = function (fn) {
+    return function (xs) { return xs.reduce(function (accumulate, val) { return accumulate.concat([fn(val)]); }, []); };
+};
+var encapsulatedTypeMap = function (fn) {
+    return function (xs) { return xs.reduce(function (accumulate, val) { return accumulate.concat([fn(val)]); }, []); };
+};
+var add1 = function (x) { return x + 1; };
+var add2 = function (x) { return x + 2; };
+var pure1 = function (x) { return [x]; };
+//curring
+var result1 = map(add1)(nums);
+var result12 = explicitTypedMap(add1)(nums);
+var result13 = typeSafeMap(add2)(nums);
+var result14 = encapsulatedTypeMap(add2)(nums);
+document.write(addBR(result1));
+document.write(addBR(result12));
+document.write(addBR(result13));
+document.write(addBR(result14));
+//Applicative Functors
+var addTogether = function (x) { return function (y) { return x + y; }; };
+//partially applied addTogether
+//resulting [(y => 1 + y), (y => 2 + y)]
+var applicativeFunctor = [1, 2].map(addTogether);
+//appMap :: f ( a -> b ) -> f a -> f b
+//applicative map for Applicative Functors
+//xs the array containing partially applied addTogether Functions
+//ys the Functor (a numeric array in this case)
+//val the elements from the first param xs, individual partially applied Function in this case
+//not type-safe
+var appMap = function (xs) { return function (ys) {
+    return ys.map(function (y) {
+        return xs.reduce(function (acc, val) {
+            return acc.concat([val(y)]);
+        }, []); //initial value for reduce, empty array in this case, as we are building it up
+    });
+}; };
+//for example, we can add two Functors together
+//here we are adding [1,2] and [1,2,3,4,5]
+//to map a Functor over another Functor
+//we use Applicative Functor
+//there are built-in implementations I believe
+var result = appMap(applicativeFunctor)([1, 2, 3, 4, 5]);
+//as result, we get a sequence of 2,3,3,4,4,5,5,6,6,7
+//actually it is a 2-d array of:
+//[[2,3], [3,4], [4,5], [5,6], [6,7]]
+//we add 1 to each value in the [1,2,3,4,5]
+//then we add 2 to each value in the [1,2,3,4,5]
+//two resulting arrays are reduced down to a single
+//array of length of 5 elements
+//steps break down:
+//map takes out each value from the second Functor one by one
+//reduce takes each value fed by map, and each value from the first Functor individually
+//reduce apples the value (partially applied function) from the second functor to the value passed by map in each iteration
+//reduce adds the two resulting singular array together
+//[val(y)] + [val(y)] <=> [(y => 1 + y) (y)] + [(y => 2 + y) (y)] <=> [a num] + [another num] <=> [num1, num2]
+//[num1, num2] will be mapped to the corresponding position in the final array
+document.write(addBR(result));
+document.write(addBR(result[0]));
+document.write(addBR(result[1]));
+document.write(addBR(result[2]));
+document.write(addBR(result[3]));
+document.write(addBR(result[4]));
+//TODO - Monad
+//extremely trivial monad
+//pure :: a -> M a
+var pure = function (x) { return { first: x }; };
+//monadMap :: M a -> (a -> M b) -> M b
+//In fact there are already implementations available in libraries, for example, flatMap
+var monadMap = function (Ma) { return function (fn) { return fn(Ma['first']); }; };
+var times10 = function (x) { return pure(x * 10); };
+var firstMonadResult = monadMap(pure(10))(times10);
+var secondMonadResult = monadMap(firstMonadResult)(times10);
+document.write(addBR(firstMonadResult));
+document.write(addBR(secondMonadResult));
+document.write(addBR(firstMonadResult['first']));
+document.write(addBR(secondMonadResult['first']));
+// (trivial) TypeScript version of
+// Option Monad in F# (equivalent to
+// Maybe Monad in Haskell)
+//Option :: Some | None
+//Some X
+var identity = function (x) {
+    return {
+        state: true,
+        value: x
+    };
+};
+//Option :: Some | None
+//None
+var none = function (_) {
+    return {
+        state: false,
+        value: 'None'
+    };
+};
+//bind :: M a -> (a -> M b) -> M b
+var bind = function (Ma) { return function (fn) {
+    return Ma['state'] ?
+        fn(Ma['value']) : none(Ma['value']);
+}; };
+var add42 = function (x) { return identity(x + 42); };
+var maybe1 = bind(identity(10))(add42);
+var maybe2 = bind(none(maybe1))(add42);
+var maybe3 = bind(maybe2)(add42);
+var maybe4 = bind(maybe1)(add42);
+document.write(addBR(maybe1['value']));
+document.write(addBR(maybe2['value']));
+document.write(addBR(maybe3['value']));
+document.write(addBR(maybe4['value']));
 var _a;
-//TODO - Monad 

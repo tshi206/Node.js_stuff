@@ -426,7 +426,7 @@ function  theSum (x , y, z): void{
 }
 
 let args = [4, 5, 6];
-theSum(...args); //spread operator, works but complaints from the compiler
+//theSum(...args); //spread operator, works but complaints from the compiler
 
 enum Emotion {
     Happy = 1, //initial index, customizable
@@ -438,4 +438,150 @@ let myFeeling = Emotion.Sad;
 //is equivalent to
 myFeeling = 2;
 
+//Functors
+
+let nums = [1,2,3,4,5];
+//this is an example of map implementation
+//it is not the one from libraries
+//fn the function, xs the functor (array in this case)
+let map = fn => xs => xs.reduce(
+    (accumulate, val) => [...accumulate, fn(val)],
+    []); //[] the initial value for reduce
+
+let explicitTypedMap = (fn: Function) => xs => xs.reduce(
+    (accumulate, val) => [...accumulate, fn(val)],
+    []); //[] the initial value for reduce
+
+let typeSafeMap = (fn: (x: number) => number) =>
+        xs => xs.reduce(
+    (accumulate, val) => [...accumulate, fn(val)],
+    []);
+
+type MyFun = (n: number) => number;
+let encapsulatedTypeMap = (fn: MyFun) =>
+    xs => xs.reduce(
+        (accumulate, val) => [...accumulate, fn(val)],
+        []);
+
+let add1 = x => x+1;
+let add2 = x => x+2;
+
+let pure1 = x => [x];
+
+//curring
+let result1 = map(add1)(nums);
+let result12 = explicitTypedMap(add1)(nums);
+let result13 = typeSafeMap(add2)(nums);
+let result14 = encapsulatedTypeMap(add2)(nums);
+document.write(addBR(result1));
+document.write(addBR(result12));
+document.write(addBR(result13));
+document.write(addBR(result14));
+
+//Applicative Functors
+
+let addTogether = x => y => x + y;
+
+//partially applied addTogether
+//resulting [(y => 1 + y), (y => 2 + y)]
+let applicativeFunctor = [1,2].map(addTogether);
+
+//appMap :: f ( a -> b ) -> f a -> f b
+//applicative map for Applicative Functors
+//xs the array containing partially applied addTogether Functions
+//ys the Functor (a numeric array in this case)
+//val the elements from the first param xs, individual partially applied Function in this case
+//not type-safe
+let appMap = xs => ys => {
+    return ys.map( y => {
+        return xs.reduce((acc, val) => {
+            return [...acc, val(y)]
+        }, []) //initial value for reduce, empty array in this case, as we are building it up
+    })
+};
+
+//for example, we can add two Functors together
+//here we are adding [1,2] and [1,2,3,4,5]
+//to map a Functor over another Functor
+//we use Applicative Functor
+//there are built-in implementations I believe
+let result = appMap(applicativeFunctor)([1,2,3,4,5]);
+//as result, we get a sequence of 2,3,3,4,4,5,5,6,6,7
+//actually it is a 2-d array of:
+//[[2,3], [3,4], [4,5], [5,6], [6,7]]
+//we add 1 to each value in the [1,2,3,4,5]
+//then we add 2 to each value in the [1,2,3,4,5]
+//two resulting arrays are reduced down to a single
+//array of length of 5 elements
+//steps break down:
+//map takes out each value from the second Functor one by one
+//reduce takes each value fed by map, and each value from the first Functor individually
+//reduce apples the value (partially applied function) from the second functor to the value passed by map in each iteration
+//reduce adds the two resulting singular array together
+//[val(y)] + [val(y)] <=> [(y => 1 + y) (y)] + [(y => 2 + y) (y)] <=> [a num] + [another num] <=> [num1, num2]
+//[num1, num2] will be mapped to the corresponding position in the final array
+document.write(addBR(result));
+document.write(addBR(result[0]));
+document.write(addBR(result[1]));
+document.write(addBR(result[2]));
+document.write(addBR(result[3]));
+document.write(addBR(result[4]));
+
 //TODO - Monad
+
+//extremely trivial monad
+
+//pure :: a -> M a
+let pure = x => {return {first: x}};
+
+//monadMap :: M a -> (a -> M b) -> M b
+//In fact there are already implementations available in libraries, for example, flatMap
+let monadMap = Ma => fn =>
+    { return fn(Ma['first']) };
+
+let times10 = x => pure(x*10);
+
+let firstMonadResult = monadMap(pure(10))(times10);
+
+let secondMonadResult = monadMap(firstMonadResult)(times10);
+
+document.write(addBR(firstMonadResult));
+document.write(addBR(secondMonadResult));
+document.write(addBR(firstMonadResult['first']));
+document.write(addBR(secondMonadResult['first']));
+
+// (trivial) TypeScript version of
+// Option Monad in F# (equivalent to
+// Maybe Monad in Haskell)
+
+//Option :: Some | None
+//Some X
+let identity = x => {return {
+    state: true,
+    value: x
+}};
+
+//Option :: Some | None
+//None
+let none = _ => {return {
+    state: false,
+    value: 'None'
+}};
+
+//bind :: M a -> (a -> M b) -> M b
+let bind = Ma => fn => {
+    return Ma['state'] ?
+        fn(Ma['value']) : none(Ma['value'])
+};
+
+let add42 = x => identity(x + 42);
+
+let maybe1 = bind(identity(10))(add42);
+let maybe2 = bind(none(maybe1))(add42);
+let maybe3 = bind(maybe2)(add42);
+let maybe4 = bind(maybe1)(add42);
+
+document.write(addBR(maybe1['value']));
+document.write(addBR(maybe2['value']));
+document.write(addBR(maybe3['value']));
+document.write(addBR(maybe4['value']));
