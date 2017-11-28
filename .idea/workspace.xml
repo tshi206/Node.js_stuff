@@ -2,6 +2,8 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="62a3fc21-4219-4307-824e-dcfafbfef583" name="Default" comment="">
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/tsconfig.json" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/myFirstTypeScript.js" afterPath="$PROJECT_DIR$/myFirstTypeScript.js" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/myFirstTypeScript.ts" afterPath="$PROJECT_DIR$/myFirstTypeScript.ts" />
     </list>
@@ -20,7 +22,7 @@
       <file leaf-file-name="index.js" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/index.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="988">
+            <state relative-caret-position="638">
               <caret line="38" column="53" lean-forward="false" selection-start-line="38" selection-start-column="53" selection-end-line="38" selection-end-column="53" />
               <folding />
             </state>
@@ -40,8 +42,18 @@
       <file leaf-file-name="myFirstTypeScript.ts" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/myFirstTypeScript.ts">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="248">
-              <caret line="568" column="3" lean-forward="true" selection-start-line="568" selection-start-column="3" selection-end-line="568" selection-end-column="3" />
+            <state relative-caret-position="551">
+              <caret line="431" column="0" lean-forward="true" selection-start-line="431" selection-start-column="0" selection-end-line="431" selection-end-column="0" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="tsconfig.json" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/tsconfig.json">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="78">
+              <caret line="3" column="21" lean-forward="false" selection-start-line="3" selection-start-column="21" selection-end-line="3" selection-end-column="21" />
               <folding />
             </state>
           </provider>
@@ -55,6 +67,7 @@
         <option value="JavaScript File" />
         <option value="TypeScript File" />
         <option value="HTML File" />
+        <option value="tsconfig.json" />
       </list>
     </option>
   </component>
@@ -70,6 +83,7 @@
         <option value="$PROJECT_DIR$/whyImdoingfrontendinNode.html" />
         <option value="$PROJECT_DIR$/WhyImDoingFrontendInNode.html" />
         <option value="$PROJECT_DIR$/myFirstTypeScript.js" />
+        <option value="$PROJECT_DIR$/tsconfig.json" />
         <option value="$PROJECT_DIR$/myFirstTypeScript.ts" />
       </list>
     </option>
@@ -96,6 +110,9 @@
     <option name="x" value="950" />
     <option name="width" value="978" />
     <option name="height" value="1047" />
+  </component>
+  <component name="ProjectLevelVcsManager">
+    <ConfirmationsSetting value="2" id="Add" />
   </component>
   <component name="ProjectView">
     <navigator currentView="ProjectPane" proportions="" version="1">
@@ -146,7 +163,33 @@
           <select />
         </subPane>
       </pane>
-      <pane id="Scope" />
+      <pane id="Scope">
+        <subPane subId="Project Files">
+          <expand>
+            <path>
+              <item name="Root" type="cbb8eebc:String" user="Root" />
+              <item name="node_tutorial" type="cbb8eebc:String" user="node_tutorial" />
+            </path>
+            <path>
+              <item name="Root" type="cbb8eebc:String" user="Root" />
+              <item name="node_tutorial" type="cbb8eebc:String" user="node_tutorial" />
+              <item name=".idea" type="cbb8eebc:String" user=".idea" />
+            </path>
+            <path>
+              <item name="Root" type="cbb8eebc:String" user="Root" />
+              <item name="node_tutorial" type="cbb8eebc:String" user="node_tutorial" />
+              <item name=".idea" type="cbb8eebc:String" user=".idea" />
+              <item name="libraries" type="cbb8eebc:String" user="libraries" />
+            </path>
+            <path>
+              <item name="Root" type="cbb8eebc:String" user="Root" />
+              <item name="node_tutorial" type="cbb8eebc:String" user="node_tutorial" />
+              <item name="dist" type="cbb8eebc:String" user="dist" />
+            </path>
+          </expand>
+          <select />
+        </subPane>
+      </pane>
     </panes>
   </component>
   <component name="PropertiesComponent">
@@ -154,11 +197,14 @@
     <property name="last_opened_file_path" value="$PROJECT_DIR$" />
     <property name="nodejs_interpreter_path" value="D:/Program Files/nodejs/node" />
     <property name="HbShouldOpenHtmlAsHb" value="" />
-    <property name="settings.editor.selected.configurable" value="JavaScript.Libraries" />
+    <property name="settings.editor.selected.configurable" value="settings.nodejs" />
     <property name="javascript.nodejs.core.library.configured.version" value="8.9.1" />
     <property name="JavaScriptPreferStrict" value="false" />
     <property name="JavaScriptWeakerCompletionTypeGuess" value="true" />
     <property name="DefaultHtmlFileTemplate" value="HTML File" />
+    <property name="node.js.path.for.package.tslint" value="project" />
+    <property name="node.js.detected.package.tslint" value="true" />
+    <property name="node.js.selected.package.tslint" value="" />
   </component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
@@ -210,12 +256,12 @@
       <workItem from="1511255261773" duration="3102000" />
       <workItem from="1511340696562" duration="70000" />
       <workItem from="1511340816722" duration="58000" />
-      <workItem from="1511340879350" duration="38527000" />
+      <workItem from="1511340879350" duration="44060000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="45879000" />
+    <option name="totallyTimeSpent" value="51412000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="950" y="0" width="978" height="1047" extended-state="0" />
@@ -246,6 +292,7 @@
     <option name="exactExcludedFiles">
       <list>
         <option value="$PROJECT_DIR$/myFirstTypeScript.js" />
+        <option value="$PROJECT_DIR$/myFirstTypeScript.js.map" />
       </list>
     </option>
   </component>
@@ -425,24 +472,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/package.json">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="364">
-          <caret line="14" column="4" lean-forward="false" selection-start-line="14" selection-start-column="4" selection-end-line="14" selection-end-column="4" />
-          <folding>
-            <marker date="1511796153107" expanded="true" signature="242:249" ph="{&quot;babel-cli&quot;: &quot;^6.26.0&quot;...}" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/index.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="988">
-          <caret line="38" column="53" lean-forward="false" selection-start-line="38" selection-start-column="53" selection-end-line="38" selection-end-column="53" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/WhyImDoingFrontendInNode.html">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="234">
@@ -456,35 +485,60 @@
         <state relative-caret-position="-3132">
           <caret line="42" column="7" lean-forward="false" selection-start-line="42" selection-start-column="7" selection-end-line="42" selection-end-column="7" />
           <folding>
-            <marker date="1511894886259" expanded="true" signature="5455:7236" ph="{...}" />
-            <marker date="1511894886259" expanded="true" signature="7130:7137" ph="{...}" />
-            <marker date="1511894886259" expanded="true" signature="7179:7216" ph="{...}" />
-            <marker date="1511894886259" expanded="true" signature="8271:8284" ph="/**...*/" />
-            <marker date="1511894886259" expanded="true" signature="8304:8643" ph="{...}" />
-            <marker date="1511894886259" expanded="true" signature="8396:8537" ph="{...}" />
-            <marker date="1511894886259" expanded="true" signature="8579:8620" ph="{...}" />
-            <marker date="1511894886259" expanded="true" signature="9073:9086" ph="/**...*/" />
-            <marker date="1511894886259" expanded="true" signature="9100:9281" ph="{...}" />
-            <marker date="1511894886259" expanded="true" signature="9127:9164" ph="{...}" />
-            <marker date="1511894886259" expanded="true" signature="9203:9262" ph="{...}" />
-            <marker date="1511894886259" expanded="true" signature="9297:9310" ph="/**...*/" />
-            <marker date="1511894886259" expanded="true" signature="9324:9508" ph="{...}" />
-            <marker date="1511894886259" expanded="true" signature="9352:9389" ph="{...}" />
-            <marker date="1511894886259" expanded="true" signature="9429:9488" ph="{...}" />
-            <marker date="1511894886259" expanded="true" signature="9680:9707" ph="{...}" />
-            <marker date="1511894886259" expanded="true" signature="9813:9826" ph="/**...*/" />
-            <marker date="1511894886259" expanded="true" signature="9840:9918" ph="{...}" />
-            <marker date="1511894886259" expanded="true" signature="9877:9884" ph="{...}" />
-            <marker date="1511894886259" expanded="true" signature="10393:10442" ph="//..." />
-            <marker date="1511894886259" expanded="true" signature="14666:14681" ph="//..." />
+            <marker date="1511905646913" expanded="true" signature="7130:7137" ph="{...}" />
           </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/package.json">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="364">
+          <caret line="14" column="4" lean-forward="false" selection-start-line="14" selection-start-column="4" selection-end-line="14" selection-end-column="4" />
+          <folding>
+            <marker date="1511796153107" expanded="true" signature="242:249" ph="{&quot;babel-cli&quot;: &quot;^6.26.0&quot;...}" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/index.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="638">
+          <caret line="38" column="53" lean-forward="false" selection-start-line="38" selection-start-column="53" selection-end-line="38" selection-end-column="53" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/.idea/typescript-compiler.xml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/myFirstTypeScript.js.map">
+      <provider editor-type-id="sourcemapFileViewerProvider">
+        <state />
+      </provider>
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-8270">
+          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/tsconfig.json">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="78">
+          <caret line="3" column="21" lean-forward="false" selection-start-line="3" selection-start-column="21" selection-end-line="3" selection-end-column="21" />
+          <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/myFirstTypeScript.ts">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="248">
-          <caret line="568" column="3" lean-forward="true" selection-start-line="568" selection-start-column="3" selection-end-line="568" selection-end-column="3" />
+        <state relative-caret-position="551">
+          <caret line="431" column="0" lean-forward="true" selection-start-line="431" selection-start-column="0" selection-end-line="431" selection-end-column="0" />
           <folding />
         </state>
       </provider>

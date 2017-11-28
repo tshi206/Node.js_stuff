@@ -419,14 +419,24 @@ many many lines <br />
 document.write(multStr);
 document.write(`<b>${multStr}</b>`);
 
-//spread operator example
-function  theSum (x , y, z): void{
+// spread operator example
+// the reason I have to mark all params optional is
+// because array spread operator cannot ensure the
+// length of array will satisfy the function type
+// because Array in JS has dynamic length.
+// see https://github.com/Microsoft/TypeScript/issues/4130#issuecomment-303486552
+function theSum (x?, y?, z?): void{
     document.write("Sum : " +
         (x + y + z) + "<br />");
 }
 
 let args = [4, 5, 6];
-//theSum(...args); //spread operator, works but complaints from the compiler
+theSum(...args); //spread operator,
+// works but complaints from the compiler
+// if the args cannot ensure a minimum length of 3
+// sometimes it is hard to enforce strong typing.
+// it works in JS anyway so as long as it works in
+// browsers then that's fine
 
 enum Emotion {
     Happy = 1, //initial index, customizable
@@ -585,3 +595,48 @@ document.write(addBR(maybe1['value']));
 document.write(addBR(maybe2['value']));
 document.write(addBR(maybe3['value']));
 document.write(addBR(maybe4['value']));
+
+//purer Maybe without Objects
+let pureMaybe = x => ['Just', x];
+let failMaybe = _ => ['Nothing', null];
+
+let just = pureMaybe;
+let nothing = failMaybe(null);
+
+let fst = ([x,y]) => x;
+let snd = ([x,y]) => y;
+
+let add7 = x => just(x + 7);
+
+let bindMaybe = Ma => fn => {
+    return fst(Ma) === 'Just' ?
+        fn(snd(Ma)) : nothing
+};
+
+let maybe5 = bindMaybe(just(3))(add7);
+let maybe6 = bindMaybe(maybe5)(add7);
+let maybe7 = bindMaybe(maybe6)(add7);
+let maybe8 = bindMaybe(maybe7)(add7);
+let maybeResult = bindMaybe(maybe8)(addBR);
+document.write(maybeResult);
+let maybeResult2 = bindMaybe(maybe8)(
+    (x) => {
+        document.write(
+            addBR("little side effect " + x))
+    }
+);
+
+// trivial Promise
+
+//bind :: M a  -> (a -> M b) -> M b
+//then :: M a  -> (a -> M b) -> M b
+//then :: M a  -> (a -> b) -> M b
+
+let pure4 = x => Promise.resolve(x);
+
+pure4(10).then(add1).then(console.log).catch(
+    (x) => {
+        document.write(
+            addBR("Promise caught " + x))
+    }
+);
