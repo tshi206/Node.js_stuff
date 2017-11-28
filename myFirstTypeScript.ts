@@ -1,0 +1,441 @@
+class Whatever {
+
+    private sideEffect : any = "ugly effect";
+
+    public Whatever(someStuff : string){
+
+    }
+}
+
+function addBR (someStr : any){
+    return someStr + "<br />";
+}
+
+// var myName : string = "Big Brother";
+// var myAge : number = 41;
+// var canVote : boolean = true;
+// var someshit: any = "ugly code";
+
+//who wants some FP?
+let myName : string = "Big Brother";
+let myAge : number = 41;
+let canVote : boolean = true;
+let someShit: any = "ugly code";
+
+someShit = 2;
+
+document.getElementById("tsStuff")
+    .innerHTML = myName + " replaced 'Some Stuff' ";
+
+document.write("myName is " + typeof (myName)
+    + "<br />");
+document.write("canVote is " + typeof (canVote)
+    + "<br />");
+document.write("myAge  is " + typeof (myAge)
+    + "<br />");
+document.write("someShit  is " + typeof (someShit)
+    + "<br />");
+
+let strToNum : number = parseInt("5");
+let numToStr : Number = 5;
+document.write("numToStr is a " + typeof (
+    numToStr) + "<br />");
+document.write("numToStr is a " + typeof (
+    numToStr.toString()) + "<br />");
+
+//hi im immutable
+const PI = 3.14159;
+//PI = 555; OOps bad bad bad
+
+interface SuperHero {
+    realName: String;
+    superName: String;
+}
+
+let superman: SuperHero = {
+    realName: 'Clark Kent',
+    superName: "Superman"
+};
+
+//superman = {}; gets u undefined in each field
+
+document.write(superman.realName + " is " +
+    superman.superName + "<br />");
+
+let employees: string[] = ["Bob", "Sally", "Sam"];
+
+employees.push(5+"");
+
+document.write(addBR(employees.toString()));
+
+let newEmployees = employees.map((member) => {
+    return member + " eats curry";
+});
+
+document.write(addBR(newEmployees.toString()));
+
+document.write(addBR(employees.map((member, index) => {
+    return member + " is at index No. " + index;
+}).toString()));
+
+const superHeroes: SuperHero[] = [];
+
+superHeroes.push({
+    realName: 'Bruce Wayne',
+    superName: "Batman"
+});
+
+superHeroes.push(superman);
+
+//make some fucking side effect in forEach
+superHeroes.forEach((hero) => {
+    document.write(addBR(hero.realName +
+        " is " + hero.superName));
+});
+
+document.write(addBR("5 + 4 = " + (5+4)));
+
+let num : number = 1;
+
+//num++ will be first written and then incremented
+//++num will be first incremented and then written
+//num-- will be first written and then decremented
+//--num will be first decremented and then written
+document.write(addBR("num++ = " + num++)); //2
+document.write(addBR("++num = " + ++num)); //3
+document.write(addBR("num-- = " + num--)); //2
+document.write(addBR("--num = " + --num)); //1
+
+//difference between let and var
+let sampLet = 123;
+
+if (true){
+    let sampLet = 456; //both let and const are block-scoped and behave more strictly
+}
+
+document.write(addBR(sampLet));
+
+var sampVar = 123;
+
+if (true){
+    var sampVar = 456; //var is not block-scoped
+}
+
+document.write(addBR(sampVar));
+
+let randArray = [5,6,7,8];
+
+for (var val in randArray){ //for in prints the indices
+    document.write(addBR(val));
+}
+
+const mapping = Array.prototype.map; //Using map generically
+
+let strArray : string = mapping.call(randArray, (member) => {
+    return member.toString();
+}); //or simply strArray = randArray.map(String);
+
+for (val of strArray){ //for of prints the contents
+    document.write(addBR(val));
+}
+
+//almost the same as Scala's function signature
+let getSum = function (num1: number,
+                         num2: number): number{
+    return num1 + num2;
+};
+
+let theSum1: number = getSum(5, 2);
+document.write(addBR("5 + 2 = " + theSum1));
+
+let getDifference = function (num1 : number,
+                              num2 = 2,
+                              num3? : number){
+    if (typeof num3 !== 'undefined'){
+        return num1 - num2 - num3;
+    }
+    return num1 - num2;
+};
+
+document.write(addBR("5 - 2 = "
+    + getDifference(5)));
+document.write(addBR("5 - 2 - 3 = "
+    + getDifference(5, 2, 3)));
+
+let sumAll = function (...nums:number[]){
+    return nums.reduce((a,b) => {
+        return a + b;
+    }, 0);
+};
+
+document.write(addBR(sumAll(1,2,3,4,5)));
+
+let factorial = function (num : number,
+                          factorialSoFar = 1): number
+{
+  if (num === 0){
+      return factorialSoFar;
+  }
+  return factorial(num - 1, num * factorialSoFar);
+};
+
+document.write(addBR(factorial(15)));
+
+//assigning an anonymous function to a variable has
+//no difference from declaring an explicit function tho
+//hence this one is explicitly declared
+function fibonacci (num : number,
+                    fibSoFar = 0) : number{
+    if (num === 0){
+        return fibSoFar;
+    }
+    return fibonacci(num - 1,
+        num + fibSoFar);
+}
+
+document.write(addBR(fibonacci(5)));
+
+//fancy way to write anonymous functions using lambda
+//trying to pretend this is functional
+//Scala people and F# people gonna be grumpy for this
+let doStuff = (x : number) : number => {
+  if (x > 15){
+      return fibonacci(x);
+  } else {
+      return factorial(x);
+  }
+};
+
+document.write(addBR(doStuff(15)));
+document.write(addBR(doStuff(16)));
+
+/*
+Java people gonna love this
+ */
+class Hero implements SuperHero{
+
+    static universe : number;
+
+    private gender : string;
+
+    private _weakness : string;
+
+    realName: String;
+    superName: String;
+
+    //Note that TypeScript's class constructors are
+    //all called 'constructor'. This is different
+    //from Java.
+    //This method though looks like a constructor
+    //in Java however in TypeScript it is just a
+    //setter method for the private field 'gender'
+    public Hero(gender : string){
+        this.gender = gender;
+    }
+
+    //parameters marked by private will be automatically
+    //initialized as fields by the constructor
+    //using the value passed in
+    constructor(gender: string, realName: string,
+                superName: string,
+                private isRich : boolean){
+        //don't need to initialize isRich in the body
+        this.gender = gender;
+        this.realName = realName;
+        this.superName = superName;
+        Hero.universe = 52;
+    }
+
+    public getGender() : string {
+        return this.gender;
+    }
+
+    //different way to define getters
+    get weakness() : string{
+        return this._weakness;
+    }
+
+    //different way to define setters
+    //A set method cannot have a return type annotation
+    set weakness(weakness : string){
+        this._weakness = weakness;
+    }
+
+    // public says() {
+    //     return this.isRich ?
+    //         "I'm rich" : "I can fly";
+    // }
+    // ternary works though compiler will complain
+    // bout the type mismatch on the override method
+    public says() {
+        let word : string;
+        if (this.isRich){
+            word = "I'm rich";
+        } else {
+            word = "I can fly";
+        }
+        return word;
+    }
+
+    public static WhatsTheUniverse() : number{
+        return Hero.universe;
+    }
+}
+
+let clark = new Hero("male", "Clark Kent",
+    "Superman", false);
+let bruce = new Hero("male", "Bruce Wayne",
+    "Batman", true);
+let diana = new Hero("male", "Diana Prince",
+    "Wonder Woman", false);
+
+document.write(addBR("diana's gender is " +
+    diana.getGender()));
+
+diana.Hero("female");
+
+document.write(addBR("diana's gender is " +
+    diana.getGender()));
+
+document.write(addBR("superman's weakness is "
+    + clark.weakness));
+
+clark.weakness = "Kryptonite";
+
+document.write(addBR("superman's weakness is "
+    + clark.weakness));
+
+document.write(addBR( bruce.realName + " is "
+    + bruce.superName + " and he says "
+    + bruce.says()));
+document.write(addBR(clark.realName + " is "
+    + clark.superName + " and he says "
+    + clark.says()));
+document.write(addBR(diana.realName + " is "
+    + diana.superName + " and she says "
+    + diana.says()));
+document.write(addBR("They are in the "
+    + Hero.universe + "th universe"));
+document.write(addBR("They are in the "
+    + Hero.WhatsTheUniverse() + "th universe"));
+
+class Villain extends Hero {
+
+    constructor(gender: string, realName: string,
+                superName: string,
+                isRich : boolean){
+        super(gender, realName, superName, isRich);
+        Hero.universe = 52;
+    }
+
+    public says() {
+        return "I'm the bad guy";
+    }
+}
+
+let joker = new Villain("male", "unknown",
+    "Joker", true);
+document.write(addBR( joker.realName + " is "
+    + joker.superName + " and he says "
+    + joker.says()));
+document.write(addBR( "Does Joker have field" +
+    " 'isRich' : " + ('isRich' in joker)));
+document.write(addBR( "Is Joker a Hero: "
+    + (joker instanceof Hero)));
+document.write(addBR( "Is Joker a Villain: "
+    + (joker instanceof Villain)));
+
+interface Vehicle {
+    drive() : any;
+}
+
+class Car implements Vehicle {
+    drive(): any {
+        return "I have " + this.wheels + " wheels";
+    }
+
+    constructor (private wheels : number) {}
+}
+
+class Bike implements Vehicle {
+    drive(): any {
+        return "I have " + this.wheels + " wheels";
+    }
+
+    constructor (private wheels : number) {}
+}
+
+let car = new Car(4);
+let bike = new Bike(2);
+
+document.write(addBR("car says : " +
+    car.drive() + " and bike says : " +
+    bike.drive()));
+
+function GetWheels<w extends Vehicle>(veh : w)
+    : string
+{
+    return veh.drive();
+}
+
+document.write(addBR(GetWheels(car)));
+document.write(addBR(GetWheels(bike)));
+
+class GenericAddableStuff<T>{
+    add : (a: T, b: T) => T;
+}
+
+let aNumber = new GenericAddableStuff<number>();
+aNumber.add = (x,y) => x+y;
+document.write(addBR("5 + 4 = "
+    + aNumber.add(5,4)));
+
+let aString = new GenericAddableStuff<string>();
+aString.add = (x,y) => String(Number(x) + Number(y));
+document.write(addBR("5 + 6 = "
+    + aString.add("5", "6")));
+
+//destruction syntax
+let randVals = {x: 1, y: 2, z: 3};
+
+let {x, y, z} = randVals;
+
+document.write(addBR(x + y + z));
+
+//load them in an array
+//and then flip the array
+[x, y, z] = [z, y, x];
+
+document.write(addBR("Switch : " +
+    (String(x) + String(y) + String(z))
+        .split('').join(' ')));
+
+//back quote
+let multStr = `I go on for 
+many lines <br />
+many many lines <br />
+<br />`;
+
+document.write(multStr);
+document.write(`<b>${multStr}</b>`);
+
+//spread operator example
+function  theSum (x , y, z): void{
+    document.write("Sum : " +
+        (x + y + z) + "<br />");
+}
+
+let args = [4, 5, 6];
+theSum(...args); //spread operator, works but complaints from the compiler
+
+enum Emotion {
+    Happy = 1, //initial index, customizable
+    Sad,
+    Angry
+}
+
+let myFeeling = Emotion.Sad;
+//is equivalent to
+myFeeling = 2;
+
+//TODO - Monad
