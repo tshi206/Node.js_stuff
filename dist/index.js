@@ -57,4 +57,4 @@ people.filter(function (p) {
 }).map(function (name) {
     return name.emit("speak", "well done mike", "die too");
 });
-//# sourceMappingURL=index.js.map
+//# sourceMappingURL=event_emitter_demo.js.map
