@@ -1,0 +1,1 @@
+Promises are monadic and then is the bind
