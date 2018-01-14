@@ -2,8 +2,13 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="48825d5e-70fe-4021-aea4-fa5dadbf3936" name="Default" comment="">
-      <change beforePath="" afterPath="$PROJECT_DIR$/typescript_function_composition_demo/handling_rejections_WITHOUT_function_composition.ts" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/typescript_function_composition_demo/handling_rejecttions_USING_function_composition.ts" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/typescript_create_delete_files_and_directories/delete_file_async_using_promises.ts" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/typescript_create_delete_files_and_directories/delete_file_demo.ts" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/typescript_create_delete_files_and_directories/helloWorld.txt" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/typescript_create_delete_files_and_directories/mkdir_async_demo_with_callback_hell.ts" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/typescript_create_delete_files_and_directories/mkdir_async_demo_with_promises.ts" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/typescript_create_delete_files_and_directories/mkdir_sync_demo.ts" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/typescript_create_delete_files_and_directories/typescript_rmdir_async_demo.ts" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
     </list>
     <ignored path="$PROJECT_DIR$/.tmp/" />
@@ -28,11 +33,31 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="handling_rejecttions_USING_function_composition.ts" pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/typescript_function_composition_demo/handling_rejecttions_USING_function_composition.ts">
+      <file leaf-file-name="mkdir_async_demo_with_callback_hell.ts" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/typescript_create_delete_files_and_directories/mkdir_async_demo_with_callback_hell.ts">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="243">
-              <caret line="24" column="31" lean-forward="false" selection-start-line="24" selection-start-column="31" selection-end-line="24" selection-end-column="31" />
+            <state relative-caret-position="0">
+              <caret line="0" column="25" lean-forward="false" selection-start-line="0" selection-start-column="25" selection-end-line="0" selection-end-column="25" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="mkdir_async_demo_with_promises.ts" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/typescript_create_delete_files_and_directories/mkdir_async_demo_with_promises.ts">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="-2544">
+              <caret line="0" column="25" lean-forward="false" selection-start-line="0" selection-start-column="25" selection-end-line="0" selection-end-column="25" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="typescript_rmdir_async_demo.ts" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/typescript_create_delete_files_and_directories/typescript_rmdir_async_demo.ts">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="262">
+              <caret line="12" column="3" lean-forward="false" selection-start-line="12" selection-start-column="3" selection-end-line="12" selection-end-column="3" />
               <folding>
                 <element signature="n#!!doc" expanded="true" />
               </folding>
@@ -72,6 +97,15 @@
         <option value="$PROJECT_DIR$/typescript_function_composition_demo/typescript_asynchronous_function_composition.ts" />
         <option value="$PROJECT_DIR$/typescript_function_composition_demo/handling_rejections_WITHOUT_function_composition.ts" />
         <option value="$PROJECT_DIR$/typescript_function_composition_demo/handling_rejecttions_USING_function_composition.ts" />
+        <option value="$PROJECT_DIR$/typescript_create_delete_files_and_directories/delete_file_async_using_promises.ts" />
+        <option value="$PROJECT_DIR$/typescript_create_delete_files_and_directories/helloWorld.txt" />
+        <option value="$PROJECT_DIR$/typescript_create_delete_files_and_directories/mkdir_demo_with_callback_hell.ts" />
+        <option value="$PROJECT_DIR$/typescript_create_delete_files_and_directories/mkdir_sync_demo.ts" />
+        <option value="$PROJECT_DIR$/typescript_create_delete_files_and_directories/delete_file_demo.ts" />
+        <option value="$PROJECT_DIR$/typescript_create_delete_files_and_directories/mkdir_async_demo_with_callback_hell.js" />
+        <option value="$PROJECT_DIR$/typescript_create_delete_files_and_directories/mkdir_async_demo_with_promises.ts" />
+        <option value="$PROJECT_DIR$/typescript_create_delete_files_and_directories/mkdir_async_demo_with_callback_hell.ts" />
+        <option value="$PROJECT_DIR$/typescript_create_delete_files_and_directories/typescript_rmdir_async_demo.ts" />
       </list>
     </option>
   </component>
@@ -157,24 +191,19 @@
             <path>
               <item name="node_tutorial" type="b2602c69:ProjectViewProjectNode" />
               <item name="node_tutorial" type="462c0819:PsiDirectoryNode" />
-              <item name="typescript_function_composition_demo" type="462c0819:PsiDirectoryNode" />
+              <item name="typescript_create_delete_files_and_directories" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
               <item name="node_tutorial" type="b2602c69:ProjectViewProjectNode" />
               <item name="node_tutorial" type="462c0819:PsiDirectoryNode" />
-              <item name="typescript_function_composition_demo" type="462c0819:PsiDirectoryNode" />
-              <item name="handling_rejections_WITHOUT_function_composition.ts" type="620a8d5e:NestingTreeNode" />
+              <item name="typescript_create_delete_files_and_directories" type="462c0819:PsiDirectoryNode" />
+              <item name="mkdir_async_demo_with_promises.ts" type="620a8d5e:NestingTreeNode" />
             </path>
             <path>
               <item name="node_tutorial" type="b2602c69:ProjectViewProjectNode" />
               <item name="node_tutorial" type="462c0819:PsiDirectoryNode" />
-              <item name="typescript_function_composition_demo" type="462c0819:PsiDirectoryNode" />
-              <item name="handling_rejecttions_USING_function_composition.ts" type="620a8d5e:NestingTreeNode" />
-            </path>
-            <path>
-              <item name="node_tutorial" type="b2602c69:ProjectViewProjectNode" />
-              <item name="node_tutorial" type="462c0819:PsiDirectoryNode" />
-              <item name="myFirstTypeScript.ts" type="620a8d5e:NestingTreeNode" />
+              <item name="typescript_create_delete_files_and_directories" type="462c0819:PsiDirectoryNode" />
+              <item name="typescript_rmdir_async_demo.ts" type="620a8d5e:NestingTreeNode" />
             </path>
           </expand>
           <select />
@@ -206,28 +235,28 @@
       </list>
     </option>
   </component>
-  <component name="RunManager" selected="Node.js.handling_rejecttions_USING_function_composition.js">
+  <component name="RunManager" selected="Node.js.typescript_rmdir_async_demo.js">
     <configuration name="myFirstTypeScript.js JavaScript" type="JavascriptDebugType" factoryName="JavaScript Debug" uri="http://localhost:63342/node_tutorial/WhyImDoingFrontendInNode.html" />
-    <configuration name="handling_rejections_WITHOUT_function_composition.js" type="NodeJSConfigurationType" factoryName="Node.js" temporary="true" path-to-js-file="handling_rejections_WITHOUT_function_composition.js" working-dir="$PROJECT_DIR$/typescript_function_composition_demo" />
-    <configuration name="handling_rejecttions_USING_function_composition.js" type="NodeJSConfigurationType" factoryName="Node.js" temporary="true" path-to-js-file="handling_rejecttions_USING_function_composition.js" working-dir="$PROJECT_DIR$/typescript_function_composition_demo" />
-    <configuration name="myFirstTypeScript.js" type="NodeJSConfigurationType" factoryName="Node.js" temporary="true" path-to-js-file="myFirstTypeScript.js" working-dir="$PROJECT_DIR$" />
-    <configuration name="typescript_asynchronous_function_composition.js" type="NodeJSConfigurationType" factoryName="Node.js" temporary="true" path-to-js-file="typescript_asynchronous_function_composition.js" working-dir="$PROJECT_DIR$/typescript_function_composition_demo" />
-    <configuration name="typescript_synchronous_function_composition.js" type="NodeJSConfigurationType" factoryName="Node.js" temporary="true" path-to-js-file="typescript_synchronous_function_composition.js" working-dir="$PROJECT_DIR$/typescript_function_composition_demo" />
+    <configuration name="delete_file_async_using_promises.js" type="NodeJSConfigurationType" factoryName="Node.js" temporary="true" path-to-js-file="delete_file_async_using_promises.js" working-dir="$PROJECT_DIR$/typescript_create_delete_files_and_directories" />
+    <configuration name="mkdir_async_demo_with_callback_hell.js" type="NodeJSConfigurationType" factoryName="Node.js" temporary="true" path-to-js-file="mkdir_async_demo_with_callback_hell.js" working-dir="$PROJECT_DIR$/typescript_create_delete_files_and_directories" />
+    <configuration name="mkdir_async_demo_with_promises.js" type="NodeJSConfigurationType" factoryName="Node.js" temporary="true" path-to-js-file="mkdir_async_demo_with_promises.js" working-dir="$PROJECT_DIR$/typescript_create_delete_files_and_directories" />
+    <configuration name="mkdir_sync_demo.js" type="NodeJSConfigurationType" factoryName="Node.js" temporary="true" path-to-js-file="mkdir_sync_demo.js" working-dir="$PROJECT_DIR$/typescript_create_delete_files_and_directories" />
+    <configuration name="typescript_rmdir_async_demo.js" type="NodeJSConfigurationType" factoryName="Node.js" temporary="true" path-to-js-file="typescript_rmdir_async_demo.js" working-dir="$PROJECT_DIR$/typescript_create_delete_files_and_directories" />
     <list size="6">
       <item index="0" class="java.lang.String" itemvalue="JavaScript Debug.myFirstTypeScript.js JavaScript" />
-      <item index="1" class="java.lang.String" itemvalue="Node.js.typescript_synchronous_function_composition.js" />
-      <item index="2" class="java.lang.String" itemvalue="Node.js.myFirstTypeScript.js" />
-      <item index="3" class="java.lang.String" itemvalue="Node.js.typescript_asynchronous_function_composition.js" />
-      <item index="4" class="java.lang.String" itemvalue="Node.js.handling_rejections_WITHOUT_function_composition.js" />
-      <item index="5" class="java.lang.String" itemvalue="Node.js.handling_rejecttions_USING_function_composition.js" />
+      <item index="1" class="java.lang.String" itemvalue="Node.js.delete_file_async_using_promises.js" />
+      <item index="2" class="java.lang.String" itemvalue="Node.js.mkdir_sync_demo.js" />
+      <item index="3" class="java.lang.String" itemvalue="Node.js.mkdir_async_demo_with_callback_hell.js" />
+      <item index="4" class="java.lang.String" itemvalue="Node.js.mkdir_async_demo_with_promises.js" />
+      <item index="5" class="java.lang.String" itemvalue="Node.js.typescript_rmdir_async_demo.js" />
     </list>
     <recent_temporary>
       <list size="5">
-        <item index="0" class="java.lang.String" itemvalue="Node.js.handling_rejecttions_USING_function_composition.js" />
-        <item index="1" class="java.lang.String" itemvalue="Node.js.handling_rejections_WITHOUT_function_composition.js" />
-        <item index="2" class="java.lang.String" itemvalue="Node.js.typescript_asynchronous_function_composition.js" />
-        <item index="3" class="java.lang.String" itemvalue="Node.js.typescript_synchronous_function_composition.js" />
-        <item index="4" class="java.lang.String" itemvalue="Node.js.myFirstTypeScript.js" />
+        <item index="0" class="java.lang.String" itemvalue="Node.js.typescript_rmdir_async_demo.js" />
+        <item index="1" class="java.lang.String" itemvalue="Node.js.mkdir_async_demo_with_promises.js" />
+        <item index="2" class="java.lang.String" itemvalue="Node.js.mkdir_async_demo_with_callback_hell.js" />
+        <item index="3" class="java.lang.String" itemvalue="Node.js.mkdir_sync_demo.js" />
+        <item index="4" class="java.lang.String" itemvalue="Node.js.delete_file_async_using_promises.js" />
       </list>
     </recent_temporary>
   </component>
@@ -247,7 +276,7 @@
       <workItem from="1515765760195" duration="64000" />
       <workItem from="1515765919121" duration="2028000" />
       <workItem from="1515768120102" duration="5844000" />
-      <workItem from="1515832106273" duration="17042000" />
+      <workItem from="1515832106273" duration="28116000" />
     </task>
     <task id="LOCAL-00001" summary="added file io demo using js">
       <created>1515773753991</created>
@@ -267,7 +296,7 @@
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="24978000" />
+    <option name="totallyTimeSpent" value="36052000" />
   </component>
   <component name="TodoView">
     <todo-panel id="selected-file">
@@ -324,6 +353,18 @@
         <option value="$PROJECT_DIR$/typescript_function_composition_demo/handling_rejecttions_USING_function_composition.js" />
         <option value="$PROJECT_DIR$/typescript_function_composition_demo/handling_rejecttions_USING_function_composition.js.map" />
         <option value="$PROJECT_DIR$/typescript_function_composition_demo/handling_rejections_WITHOUT_function_composition.js" />
+        <option value="$PROJECT_DIR$/typescript_create_delete_files_and_directories/delete_file_demo.js" />
+        <option value="$PROJECT_DIR$/typescript_create_delete_files_and_directories/delete_file_demo.js.map" />
+        <option value="$PROJECT_DIR$/typescript_create_delete_files_and_directories/delete_file_async_using_promises.js" />
+        <option value="$PROJECT_DIR$/typescript_create_delete_files_and_directories/delete_file_async_using_promises.js.map" />
+        <option value="$PROJECT_DIR$/typescript_create_delete_files_and_directories/mkdir_sync_demo.js.map" />
+        <option value="$PROJECT_DIR$/typescript_create_delete_files_and_directories/mkdir_async_demo_with_callback_hell.js.map" />
+        <option value="$PROJECT_DIR$/typescript_create_delete_files_and_directories/mkdir_sync_demo.js" />
+        <option value="$PROJECT_DIR$/typescript_create_delete_files_and_directories/mkdir_async_demo_with_callback_hell.js" />
+        <option value="$PROJECT_DIR$/typescript_create_delete_files_and_directories/mkdir_async_demo_with_promises.js" />
+        <option value="$PROJECT_DIR$/typescript_create_delete_files_and_directories/mkdir_async_demo_with_promises.js.map" />
+        <option value="$PROJECT_DIR$/typescript_create_delete_files_and_directories/typescript_rmdir_async_demo.js.map" />
+        <option value="$PROJECT_DIR$/typescript_create_delete_files_and_directories/typescript_rmdir_async_demo.js" />
       </list>
     </option>
   </component>
@@ -340,22 +381,6 @@
     <watches-manager />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/stuff.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="0">
-          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/event_emitter_demo.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="88">
-          <caret line="2" column="0" lean-forward="false" selection-start-line="2" selection-start-column="0" selection-end-line="2" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/myFirstTypeScript.ts">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="26620">
@@ -616,26 +641,10 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/tsconfig.json">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="104">
-          <caret line="4" column="21" lean-forward="false" selection-start-line="4" selection-start-column="21" selection-end-line="4" selection-end-column="21" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/typescript_function_composition_demo/typescript_asynchronous_function_composition.ts">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="-482">
           <caret line="10" column="102" lean-forward="false" selection-start-line="10" selection-start-column="102" selection-end-line="10" selection-end-column="102" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/typescript_function_composition_demo/handling_rejecttions_USING_function_composition.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="0">
-          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
           <folding />
         </state>
       </provider>
@@ -648,10 +657,132 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/typescript_function_composition_demo/handling_rejecttions_USING_function_composition.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-1679">
+          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/typescript_function_composition_demo/handling_rejecttions_USING_function_composition.ts">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="243">
-          <caret line="24" column="31" lean-forward="false" selection-start-line="24" selection-start-column="31" selection-end-line="24" selection-end-column="31" />
+        <state relative-caret-position="-1762">
+          <caret line="20" column="2" lean-forward="false" selection-start-line="20" selection-start-column="2" selection-end-line="20" selection-end-column="2" />
+          <folding>
+            <element signature="n#!!doc" expanded="false" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/typescript_create_delete_files_and_directories/gonnaBeDeleted.txt">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/typescript_create_delete_files_and_directories/fileToBeDeletedAsync.txt">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/typescript_create_delete_files_and_directories/delete_file_async_using_promises.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-861">
+          <caret line="18" column="13" lean-forward="false" selection-start-line="18" selection-start-column="13" selection-end-line="18" selection-end-column="13" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/typescript_create_delete_files_and_directories/helloWorld.txt">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="44">
+          <caret line="1" column="4" lean-forward="false" selection-start-line="1" selection-start-column="4" selection-end-line="1" selection-end-column="4" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/tsconfig.json">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="104">
+          <caret line="4" column="21" lean-forward="false" selection-start-line="4" selection-start-column="21" selection-end-line="4" selection-end-column="21" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/typescript_create_delete_files_and_directories/delete_file_demo.ts">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="88">
+          <caret line="2" column="18" lean-forward="false" selection-start-line="2" selection-start-column="18" selection-end-line="2" selection-end-column="18" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/typescript_create_delete_files_and_directories/delete_file_async_using_promises.ts">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="2288">
+          <caret line="52" column="80" lean-forward="false" selection-start-line="52" selection-start-column="80" selection-end-line="52" selection-end-column="80" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/typescript_create_delete_files_and_directories/mkdir_async_demo_with_callback_hell.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="176">
+          <caret line="16" column="63" lean-forward="false" selection-start-line="16" selection-start-column="63" selection-end-line="16" selection-end-column="63" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/typescript_create_delete_files_and_directories/stuff/helloWorldAsync.txt">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/typescript_create_delete_files_and_directories/mkdir_sync_demo.ts">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="232">
+          <caret line="7" column="4" lean-forward="false" selection-start-line="7" selection-start-column="4" selection-end-line="7" selection-end-column="4" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/typescript_create_delete_files_and_directories/mkdir_async_demo_with_callback_hell.ts">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="25" lean-forward="false" selection-start-line="0" selection-start-column="25" selection-end-line="0" selection-end-column="25" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/typescript_create_delete_files_and_directories/stuffAsync/helloWorldAsync.txt">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/typescript_create_delete_files_and_directories/mkdir_async_demo_with_promises.ts">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-2544">
+          <caret line="0" column="25" lean-forward="false" selection-start-line="0" selection-start-column="25" selection-end-line="0" selection-end-column="25" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/typescript_create_delete_files_and_directories/typescript_rmdir_async_demo.ts">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="262">
+          <caret line="12" column="3" lean-forward="false" selection-start-line="12" selection-start-column="3" selection-end-line="12" selection-end-column="3" />
           <folding>
             <element signature="n#!!doc" expanded="true" />
           </folding>
