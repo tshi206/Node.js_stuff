@@ -2,13 +2,7 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="48825d5e-70fe-4021-aea4-fa5dadbf3936" name="Default" comment="">
-      <change beforePath="" afterPath="$PROJECT_DIR$/typescript_create_delete_files_and_directories/delete_file_async_using_promises.ts" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/typescript_create_delete_files_and_directories/delete_file_demo.ts" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/typescript_create_delete_files_and_directories/helloWorld.txt" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/typescript_create_delete_files_and_directories/mkdir_async_demo_with_callback_hell.ts" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/typescript_create_delete_files_and_directories/mkdir_async_demo_with_promises.ts" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/typescript_create_delete_files_and_directories/mkdir_sync_demo.ts" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/typescript_create_delete_files_and_directories/typescript_rmdir_async_demo.ts" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/typescript_simple_server_demo/simple_server.ts" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
     </list>
     <ignored path="$PROJECT_DIR$/.tmp/" />
@@ -23,44 +17,12 @@
   </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file leaf-file-name="tsconfig.json" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/tsconfig.json">
+      <file leaf-file-name="simple_server.ts" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/typescript_simple_server_demo/simple_server.ts">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="104">
-              <caret line="4" column="21" lean-forward="false" selection-start-line="4" selection-start-column="21" selection-end-line="4" selection-end-column="21" />
+            <state relative-caret-position="261">
+              <caret line="10" column="77" lean-forward="false" selection-start-line="10" selection-start-column="77" selection-end-line="10" selection-end-column="77" />
               <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="mkdir_async_demo_with_callback_hell.ts" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/typescript_create_delete_files_and_directories/mkdir_async_demo_with_callback_hell.ts">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="0">
-              <caret line="0" column="25" lean-forward="false" selection-start-line="0" selection-start-column="25" selection-end-line="0" selection-end-column="25" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="mkdir_async_demo_with_promises.ts" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/typescript_create_delete_files_and_directories/mkdir_async_demo_with_promises.ts">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="-2544">
-              <caret line="0" column="25" lean-forward="false" selection-start-line="0" selection-start-column="25" selection-end-line="0" selection-end-column="25" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="typescript_rmdir_async_demo.ts" pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/typescript_create_delete_files_and_directories/typescript_rmdir_async_demo.ts">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="262">
-              <caret line="12" column="3" lean-forward="false" selection-start-line="12" selection-start-column="3" selection-end-line="12" selection-end-column="3" />
-              <folding>
-                <element signature="n#!!doc" expanded="true" />
-              </folding>
             </state>
           </provider>
         </entry>
@@ -106,6 +68,7 @@
         <option value="$PROJECT_DIR$/typescript_create_delete_files_and_directories/mkdir_async_demo_with_promises.ts" />
         <option value="$PROJECT_DIR$/typescript_create_delete_files_and_directories/mkdir_async_demo_with_callback_hell.ts" />
         <option value="$PROJECT_DIR$/typescript_create_delete_files_and_directories/typescript_rmdir_async_demo.ts" />
+        <option value="$PROJECT_DIR$/typescript_simple_server_demo/simple_server.ts" />
       </list>
     </option>
   </component>
@@ -170,6 +133,7 @@
       <foldersAlwaysOnTop value="true" />
     </navigator>
     <panes>
+      <pane id="Scope" />
       <pane id="ProjectPane">
         <subPane>
           <expand>
@@ -191,25 +155,18 @@
             <path>
               <item name="node_tutorial" type="b2602c69:ProjectViewProjectNode" />
               <item name="node_tutorial" type="462c0819:PsiDirectoryNode" />
-              <item name="typescript_create_delete_files_and_directories" type="462c0819:PsiDirectoryNode" />
+              <item name="typescript_simple_server_demo" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
               <item name="node_tutorial" type="b2602c69:ProjectViewProjectNode" />
               <item name="node_tutorial" type="462c0819:PsiDirectoryNode" />
-              <item name="typescript_create_delete_files_and_directories" type="462c0819:PsiDirectoryNode" />
-              <item name="mkdir_async_demo_with_promises.ts" type="620a8d5e:NestingTreeNode" />
-            </path>
-            <path>
-              <item name="node_tutorial" type="b2602c69:ProjectViewProjectNode" />
-              <item name="node_tutorial" type="462c0819:PsiDirectoryNode" />
-              <item name="typescript_create_delete_files_and_directories" type="462c0819:PsiDirectoryNode" />
-              <item name="typescript_rmdir_async_demo.ts" type="620a8d5e:NestingTreeNode" />
+              <item name="typescript_simple_server_demo" type="462c0819:PsiDirectoryNode" />
+              <item name="simple_server.ts" type="620a8d5e:NestingTreeNode" />
             </path>
           </expand>
           <select />
         </subPane>
       </pane>
-      <pane id="Scope" />
       <pane id="Scratches" />
     </panes>
   </component>
@@ -217,7 +174,7 @@
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="last_opened_file_path" value="$PROJECT_DIR$/file_io_demo_with_ts.ts" />
     <property name="HbShouldOpenHtmlAsHb" value="" />
-    <property name="settings.editor.selected.configurable" value="settings.typescriptcompiler" />
+    <property name="settings.editor.selected.configurable" value="reference.settingsdialog.IDE.editor.colors" />
     <property name="javascript.nodejs.core.library.configured.version" value="8.9.3" />
     <property name="node.js.path.for.package.tslint" value="project" />
     <property name="node.js.detected.package.tslint" value="true" />
@@ -235,28 +192,28 @@
       </list>
     </option>
   </component>
-  <component name="RunManager" selected="Node.js.typescript_rmdir_async_demo.js">
+  <component name="RunManager" selected="Node.js.simple_server.js">
     <configuration name="myFirstTypeScript.js JavaScript" type="JavascriptDebugType" factoryName="JavaScript Debug" uri="http://localhost:63342/node_tutorial/WhyImDoingFrontendInNode.html" />
-    <configuration name="delete_file_async_using_promises.js" type="NodeJSConfigurationType" factoryName="Node.js" temporary="true" path-to-js-file="delete_file_async_using_promises.js" working-dir="$PROJECT_DIR$/typescript_create_delete_files_and_directories" />
     <configuration name="mkdir_async_demo_with_callback_hell.js" type="NodeJSConfigurationType" factoryName="Node.js" temporary="true" path-to-js-file="mkdir_async_demo_with_callback_hell.js" working-dir="$PROJECT_DIR$/typescript_create_delete_files_and_directories" />
     <configuration name="mkdir_async_demo_with_promises.js" type="NodeJSConfigurationType" factoryName="Node.js" temporary="true" path-to-js-file="mkdir_async_demo_with_promises.js" working-dir="$PROJECT_DIR$/typescript_create_delete_files_and_directories" />
     <configuration name="mkdir_sync_demo.js" type="NodeJSConfigurationType" factoryName="Node.js" temporary="true" path-to-js-file="mkdir_sync_demo.js" working-dir="$PROJECT_DIR$/typescript_create_delete_files_and_directories" />
+    <configuration name="simple_server.js" type="NodeJSConfigurationType" factoryName="Node.js" temporary="true" path-to-js-file="simple_server.js" working-dir="$PROJECT_DIR$/typescript_simple_server_demo" />
     <configuration name="typescript_rmdir_async_demo.js" type="NodeJSConfigurationType" factoryName="Node.js" temporary="true" path-to-js-file="typescript_rmdir_async_demo.js" working-dir="$PROJECT_DIR$/typescript_create_delete_files_and_directories" />
     <list size="6">
       <item index="0" class="java.lang.String" itemvalue="JavaScript Debug.myFirstTypeScript.js JavaScript" />
-      <item index="1" class="java.lang.String" itemvalue="Node.js.delete_file_async_using_promises.js" />
-      <item index="2" class="java.lang.String" itemvalue="Node.js.mkdir_sync_demo.js" />
-      <item index="3" class="java.lang.String" itemvalue="Node.js.mkdir_async_demo_with_callback_hell.js" />
-      <item index="4" class="java.lang.String" itemvalue="Node.js.mkdir_async_demo_with_promises.js" />
-      <item index="5" class="java.lang.String" itemvalue="Node.js.typescript_rmdir_async_demo.js" />
+      <item index="1" class="java.lang.String" itemvalue="Node.js.mkdir_sync_demo.js" />
+      <item index="2" class="java.lang.String" itemvalue="Node.js.mkdir_async_demo_with_callback_hell.js" />
+      <item index="3" class="java.lang.String" itemvalue="Node.js.mkdir_async_demo_with_promises.js" />
+      <item index="4" class="java.lang.String" itemvalue="Node.js.typescript_rmdir_async_demo.js" />
+      <item index="5" class="java.lang.String" itemvalue="Node.js.simple_server.js" />
     </list>
     <recent_temporary>
       <list size="5">
-        <item index="0" class="java.lang.String" itemvalue="Node.js.typescript_rmdir_async_demo.js" />
-        <item index="1" class="java.lang.String" itemvalue="Node.js.mkdir_async_demo_with_promises.js" />
-        <item index="2" class="java.lang.String" itemvalue="Node.js.mkdir_async_demo_with_callback_hell.js" />
-        <item index="3" class="java.lang.String" itemvalue="Node.js.mkdir_sync_demo.js" />
-        <item index="4" class="java.lang.String" itemvalue="Node.js.delete_file_async_using_promises.js" />
+        <item index="0" class="java.lang.String" itemvalue="Node.js.simple_server.js" />
+        <item index="1" class="java.lang.String" itemvalue="Node.js.typescript_rmdir_async_demo.js" />
+        <item index="2" class="java.lang.String" itemvalue="Node.js.mkdir_async_demo_with_promises.js" />
+        <item index="3" class="java.lang.String" itemvalue="Node.js.mkdir_async_demo_with_callback_hell.js" />
+        <item index="4" class="java.lang.String" itemvalue="Node.js.mkdir_sync_demo.js" />
       </list>
     </recent_temporary>
   </component>
@@ -276,7 +233,8 @@
       <workItem from="1515765760195" duration="64000" />
       <workItem from="1515765919121" duration="2028000" />
       <workItem from="1515768120102" duration="5844000" />
-      <workItem from="1515832106273" duration="28116000" />
+      <workItem from="1515832106273" duration="29066000" />
+      <workItem from="1516031074800" duration="1016000" />
     </task>
     <task id="LOCAL-00001" summary="added file io demo using js">
       <created>1515773753991</created>
@@ -296,7 +254,7 @@
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="36052000" />
+    <option name="totallyTimeSpent" value="38018000" />
   </component>
   <component name="TodoView">
     <todo-panel id="selected-file">
@@ -309,14 +267,13 @@
   </component>
   <component name="ToolWindowManager">
     <frame x="-8" y="-8" width="1382" height="744" extended-state="6" />
-    <editor active="true" />
     <layout>
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.3294893" sideWeight="0.49255952" order="6" side_tool="false" content_ui="tabs" />
-      <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32784185" sideWeight="0.50818455" order="7" side_tool="true" content_ui="tabs" />
+      <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32715008" sideWeight="0.51116073" order="7" side_tool="true" content_ui="tabs" />
       <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.3294893" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
-      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.33278418" sideWeight="0.48828697" order="2" side_tool="false" content_ui="tabs" />
+      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33277026" sideWeight="0.48828697" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="npm" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.21354167" sideWeight="0.5184275" order="2" side_tool="true" content_ui="tabs" />
-      <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32784185" sideWeight="0.49181548" order="7" side_tool="false" content_ui="tabs" />
+      <window_info id="Terminal" active="true" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.3260135" sideWeight="0.4888393" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="TypeScript" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.3294893" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.21354167" sideWeight="0.48157248" order="0" side_tool="false" content_ui="combo" />
       <window_info id="Docker" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="false" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
@@ -365,6 +322,8 @@
         <option value="$PROJECT_DIR$/typescript_create_delete_files_and_directories/mkdir_async_demo_with_promises.js.map" />
         <option value="$PROJECT_DIR$/typescript_create_delete_files_and_directories/typescript_rmdir_async_demo.js.map" />
         <option value="$PROJECT_DIR$/typescript_create_delete_files_and_directories/typescript_rmdir_async_demo.js" />
+        <option value="$PROJECT_DIR$/typescript_simple_server_demo/simple_server.js.map" />
+        <option value="$PROJECT_DIR$/typescript_simple_server_demo/simple_server.js" />
       </list>
     </option>
   </component>
@@ -381,19 +340,10 @@
     <watches-manager />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/myFirstTypeScript.ts">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="26620">
-          <caret line="605" column="23" lean-forward="false" selection-start-line="605" selection-start-column="23" selection-end-line="605" selection-end-column="23" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/file_io_demo.js">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="616">
           <caret line="14" column="11" lean-forward="false" selection-start-line="14" selection-start-column="11" selection-end-line="14" selection-end-column="11" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -409,7 +359,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="0">
           <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -417,7 +366,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="1672">
           <caret line="38" column="0" lean-forward="true" selection-start-line="38" selection-start-column="0" selection-end-line="38" selection-end-column="0" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -425,7 +373,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="0">
           <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -433,7 +380,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="0">
           <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -444,7 +390,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="0">
           <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -460,7 +405,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="-468">
           <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -496,7 +440,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="-401114">
           <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -504,7 +447,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="0">
           <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -512,7 +454,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="0">
           <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -520,7 +461,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="68">
           <caret line="2" column="28" lean-forward="true" selection-start-line="2" selection-start-column="28" selection-end-line="2" selection-end-column="28" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -528,7 +468,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="88">
           <caret line="2" column="0" lean-forward="false" selection-start-line="2" selection-start-column="0" selection-end-line="2" selection-end-column="0" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -544,7 +483,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="0">
           <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -562,23 +500,14 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="0">
           <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-          <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/typescript_function_composition_demo.ts">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="0">
-          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
+    <entry file="file://$PROJECT_DIR$/typescript_function_composition_demo.ts" />
     <entry file="file://$PROJECT_DIR$/file_io_demo_with_ts.ts">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="704">
           <caret line="16" column="36" lean-forward="false" selection-start-line="16" selection-start-column="36" selection-end-line="16" selection-end-column="36" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -586,18 +515,10 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="176">
           <caret line="4" column="0" lean-forward="false" selection-start-line="4" selection-start-column="0" selection-end-line="4" selection-end-column="0" />
-          <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/typescript_function_composition_demo/cZCc.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="44">
-          <caret line="1" column="21" lean-forward="true" selection-start-line="1" selection-start-column="21" selection-end-line="1" selection-end-column="21" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
+    <entry file="file://$PROJECT_DIR$/typescript_function_composition_demo/cZCc.js" />
     <entry file="file://$PROJECT_DIR$/myFirstTypeScript.ts">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="233">
@@ -610,7 +531,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="-396">
           <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -618,7 +538,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="-44">
           <caret line="8" column="7" lean-forward="false" selection-start-line="8" selection-start-column="7" selection-end-line="8" selection-end-column="7" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -629,7 +548,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="0">
           <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -637,7 +555,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="44">
           <caret line="7" column="6" lean-forward="false" selection-start-line="7" selection-start-column="6" selection-end-line="7" selection-end-column="6" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -645,7 +562,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="-482">
           <caret line="10" column="102" lean-forward="false" selection-start-line="10" selection-start-column="102" selection-end-line="10" selection-end-column="102" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -653,7 +569,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="880">
           <caret line="20" column="0" lean-forward="false" selection-start-line="20" selection-start-column="0" selection-end-line="20" selection-end-column="0" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -661,7 +576,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="-1679">
           <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -675,27 +589,12 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/typescript_create_delete_files_and_directories/gonnaBeDeleted.txt">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="0">
-          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/typescript_create_delete_files_and_directories/fileToBeDeletedAsync.txt">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="0">
-          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
+    <entry file="file://$PROJECT_DIR$/typescript_create_delete_files_and_directories/gonnaBeDeleted.txt" />
+    <entry file="file://$PROJECT_DIR$/typescript_create_delete_files_and_directories/fileToBeDeletedAsync.txt" />
     <entry file="file://$PROJECT_DIR$/typescript_create_delete_files_and_directories/delete_file_async_using_promises.js">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="-861">
           <caret line="18" column="13" lean-forward="false" selection-start-line="18" selection-start-column="13" selection-end-line="18" selection-end-column="13" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -703,13 +602,12 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="44">
           <caret line="1" column="4" lean-forward="false" selection-start-line="1" selection-start-column="4" selection-end-line="1" selection-end-column="4" />
-          <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/tsconfig.json">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="104">
+        <state relative-caret-position="176">
           <caret line="4" column="21" lean-forward="false" selection-start-line="4" selection-start-column="21" selection-end-line="4" selection-end-column="21" />
           <folding />
         </state>
@@ -719,7 +617,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="88">
           <caret line="2" column="18" lean-forward="false" selection-start-line="2" selection-start-column="18" selection-end-line="2" selection-end-column="18" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -727,7 +624,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="2288">
           <caret line="52" column="80" lean-forward="false" selection-start-line="52" selection-start-column="80" selection-end-line="52" selection-end-column="80" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -735,23 +631,14 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="176">
           <caret line="16" column="63" lean-forward="false" selection-start-line="16" selection-start-column="63" selection-end-line="16" selection-end-column="63" />
-          <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/typescript_create_delete_files_and_directories/stuff/helloWorldAsync.txt">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="0">
-          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
+    <entry file="file://$PROJECT_DIR$/typescript_create_delete_files_and_directories/stuff/helloWorldAsync.txt" />
     <entry file="file://$PROJECT_DIR$/typescript_create_delete_files_and_directories/mkdir_sync_demo.ts">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="232">
           <caret line="7" column="4" lean-forward="false" selection-start-line="7" selection-start-column="4" selection-end-line="7" selection-end-column="4" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -763,17 +650,10 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/typescript_create_delete_files_and_directories/stuffAsync/helloWorldAsync.txt">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="0">
-          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
+    <entry file="file://$PROJECT_DIR$/typescript_create_delete_files_and_directories/stuffAsync/helloWorldAsync.txt" />
     <entry file="file://$PROJECT_DIR$/typescript_create_delete_files_and_directories/mkdir_async_demo_with_promises.ts">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-2544">
+        <state relative-caret-position="-2091">
           <caret line="0" column="25" lean-forward="false" selection-start-line="0" selection-start-column="25" selection-end-line="0" selection-end-column="25" />
           <folding />
         </state>
@@ -781,11 +661,19 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/typescript_create_delete_files_and_directories/typescript_rmdir_async_demo.ts">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="262">
+        <state relative-caret-position="190">
           <caret line="12" column="3" lean-forward="false" selection-start-line="12" selection-start-column="3" selection-end-line="12" selection-end-column="3" />
           <folding>
-            <element signature="n#!!doc" expanded="true" />
+            <element signature="n#!!doc" expanded="false" />
           </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/typescript_simple_server_demo/simple_server.ts">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="261">
+          <caret line="10" column="77" lean-forward="false" selection-start-line="10" selection-start-column="77" selection-end-line="10" selection-end-column="77" />
+          <folding />
         </state>
       </provider>
     </entry>
