@@ -1,6 +1,7 @@
 import {createServer, request} from "http";
 import {createReadStream, createWriteStream} from "fs";
 import * as _ from 'highland';
+import * as ResponseBuilder from './NaiveHTTPResponseBuilder';
 
 // type alias for '() => Promise<String>'
 type ReadStreamTask = () => Promise<String>;
@@ -42,22 +43,7 @@ _(loremIpsumStream).pipe(createWriteStream("lorem_ipsum_simul_write_via_pipe.txt
 let simpleServer = createServer(((request, response) => {
     console.log(`request made from : ${request.url}`);
 
-    // setHeader() must be called before writeHead(). see ref: https://stackoverflow.com/questions/7042340/error-cant-set-headers-after-they-are-sent-to-the-client
-    response.setHeader("Location", "https://masonshi23.wixsite.com/website");
-    response.writeHead(302, {"Content-Type" : "text/html"}); // change status code to 302 to indicate a redirection
-
-    //response.writeHead(200, {"Content-Type" : "text/html"});
-
-    // be aware that the Response itself is also classified as a Writable stream so we can pipe a readable stream to it
-    //createReadStream(__dirname+"/lorem_ipsum.txt", "utf8").pipe(response);
-
-    // you can manually listen to the 'finish' event on the piped stream
-    // createReadStream(__dirname+"/index.html", "utf8")
-    //     .pipe(response)
-    //     .on('finish', () => console.log(`response has been sent to ${request.url}`));
-
-    response.end("redirecting to your worst nightmare", "utf8",
-        () => console.log("response has been sent")) // response will be ended by pipe instead if you use pipe
+    ResponseBuilder.NaiveHTTPResponseBuilder(request, response);
 }));
 
 simpleServer.listen(13000, "127.0.0.1");

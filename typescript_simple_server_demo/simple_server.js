@@ -3,6 +3,7 @@ Object.defineProperty(exports, "__esModule", { value: true });
 const http_1 = require("http");
 const fs_1 = require("fs");
 const _ = require("highland");
+const ResponseBuilder = require("./NaiveHTTPResponseBuilder");
 let mutableArrayList = [];
 let loremIpsumStream = fs_1.createReadStream(`${__dirname}/lorem_ipsum.txt`, 'utf8');
 let loremIpsumWriteStream = fs_1.createWriteStream(`${__dirname}/lorem_ipsum_simul_write.txt`, 'utf8');
@@ -30,17 +31,7 @@ _(loremIpsumStream).pipe(fs_1.createWriteStream("lorem_ipsum_simul_write_via_pip
 //_(loremIpsumStream).map((data) => {return Promise.resolve(data)}).each(console.log); // wrap each chunk in Promise
 let simpleServer = http_1.createServer(((request, response) => {
     console.log(`request made from : ${request.url}`);
-    // setHeader() must be called before writeHead(). see ref: https://stackoverflow.com/questions/7042340/error-cant-set-headers-after-they-are-sent-to-the-client
-    response.setHeader("Location", "https://masonshi23.wixsite.com/website");
-    response.writeHead(302, { "Content-Type": "text/html" }); // change status code to 302 to indicate a redirection
-    //response.writeHead(200, {"Content-Type" : "text/html"});
-    // be aware that the Response itself is also classified as a Writable stream so we can pipe a readable stream to it
-    //createReadStream(__dirname+"/lorem_ipsum.txt", "utf8").pipe(response);
-    // you can manually listen to the 'finish' event on the piped stream
-    // createReadStream(__dirname+"/index.html", "utf8")
-    //     .pipe(response)
-    //     .on('finish', () => console.log(`response has been sent to ${request.url}`));
-    response.end("redirecting to your worst nightmare", "utf8", () => console.log("response has been sent")); // response will be ended by pipe instead if you use pipe
+    ResponseBuilder.NaiveHTTPResponseBuilder(request, response);
 }));
 simpleServer.listen(13000, "127.0.0.1");
 console.log('server now listening at port 13000. (to terminate : Ctrl + C)');
