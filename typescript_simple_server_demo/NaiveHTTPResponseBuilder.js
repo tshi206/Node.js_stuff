@@ -1,7 +1,7 @@
 "use strict";
 Object.defineProperty(exports, "__esModule", { value: true });
 const fs_1 = require("fs");
-// a trivial implementation of basic routing in node.js via if-else statements
+// a trivial implementation of basic routing in node.js_templates via if-else statements
 function NaiveHTTPResponseBuilder(request, response) {
     let url = request.url;
     if (url === "/" || url === "/home" || url === "/index") {

@@ -9,8 +9,15 @@ export let httpGet = (app : Express) => {
         res.render("index")
     });
 
+    // req.query is a property on req object, which is also an object.
+    // for a URL like this: *some domain*/contact?dept=marketing&person=joe
+    // the '?dept=marketing&person=joe' will be parsed automatically by express
+    // and then stored in an object as such:
+    //      { dept : "marketing',
+    //          person : "joe" }
+    // which will then be referenced by the req.query as a property on req.
     app.get("/contact", (req, res) => {
-        res.render("contact")
+        res.render("contact", {qs: req.query})
     });
 
     app.get("/lorem_ipsum", (req, res) => {

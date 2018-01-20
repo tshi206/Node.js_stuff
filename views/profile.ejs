@@ -1,14 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <style>
-        body{background: skyblue; font-family: Verdana; color: #fff; padding: 30px;}
-        h1{font-size: 48px; text-transform: uppercase; letter-spacing: 2px; text-align: center;}
-        h2{font-size: 30px; text-transform: uppercase; letter-spacing: 2px; text-align: center;}
-        p, li{text-align: center; font-size: 16px;}
-        ul{list-style-type: none; padding: 0;}
-        button{text-align: center; font-size: 20px;}
-    </style>
     <meta charset="UTF-8">
     <title>Title</title>
     <% include partials/css_links.ejs %>
@@ -16,15 +8,18 @@
 <body>
     <!-- import the 'nav' partial view (partial template) -->
     <% include partials/nav_with_styling.ejs %>
-    <h1>welcome to the profile of <%= person %></h1>
-    <p><strong>Age: </strong><%= data.age %></p>
-    <p><strong>Job: </strong><%= data.job %></p>
-    <h2>Hobbies:</h2>
-    <ul>
-        <% data.hobbies.forEach(item => { %>
-            <li><%= item %></li>
-        <% }); %>
-    </ul>
-    <p><button><a href="https://masonshi23.wixsite.com/website"> CLICK ME IF YOU DARE </a></button></p>
+    <div>
+        <h1>welcome to the profile of <%= person %></h1>
+        <p><strong>Age: </strong><%= data.age %></p>
+        <p><strong>Job: </strong><%= data.job %></p>
+        <h2>Hobbies:</h2>
+        <ul class="myUl">
+            <% data.hobbies.forEach(item => { %>
+                <li class="myLi"><%= item %></li>
+            <% }); %>
+        </ul>
+        <p><button><a href="https://masonshi23.wixsite.com/website"> CLICK ME IF YOU DARE </a></button></p>
+    </div>
+    <% include partials/js_templates/optional_js_for_bootstrap.ejs %>
 </body>
 </html>

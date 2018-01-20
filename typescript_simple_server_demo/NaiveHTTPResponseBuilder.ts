@@ -1,7 +1,7 @@
 import {IncomingMessage, ServerResponse} from "http";
 import {createReadStream} from "fs";
 
-// a trivial implementation of basic routing in node.js via if-else statements
+// a trivial implementation of basic routing in node.js_templates via if-else statements
 export function  NaiveHTTPResponseBuilder
 (request: IncomingMessage, response: ServerResponse){
 

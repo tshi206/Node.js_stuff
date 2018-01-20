@@ -5,7 +5,7 @@ var util = require("util"); //global module
 
 var stuff = require("./stuff"); //customized module
 
-console.log("Node.js tutorial");
+console.log("Node.js_templates tutorial");
 
 console.log(["cate", "mike", "james", "mary", "jone"]);
 console.log(stuff.counter(["cate", "mike", "james", "mary", "jone"]));
@@ -57,4 +57,4 @@ people.filter(function (p) {
 }).map(function (name) {
     return name.emit("speak", "well done mike", "die too");
 });
-//# sourceMappingURL=event_emitter_demo.js.map
+//# sourceMappingURL=event_emitter_demo.js_templates.map

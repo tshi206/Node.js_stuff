@@ -1,0 +1,18 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <% include partials/css_links.ejs %>
+</head>
+<body>
+<!-- import the 'nav' partial view (partial template) -->
+<% include partials/nav_with_styling.ejs %>
+<div>
+    <h1>Thanks for getting in touch</h1>
+    <p>You contacted <%= data.who %> in the <%= data.department %> department.</p>
+    <p>We will reply you at <%= data.email %></p>
+</div>
+<% include partials/js_templates/optional_js_for_bootstrap.ejs %>
+</body>
+</html>
