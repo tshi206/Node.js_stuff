@@ -2,34 +2,7 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="48825d5e-70fe-4021-aea4-fa5dadbf3936" name="Default" comment="">
-      <change beforePath="" afterPath="$PROJECT_DIR$/app_resource/http_get_style.ts" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/app_resource/http_post.ts" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/app_resource/resource_files/css/body_styling.css" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/views/contact-success.ejs" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/views/partials/js_templates/optional_js_for_bootstrap.ejs" />
-      <change beforePath="$PROJECT_DIR$/.idea/jsLibraryMappings.xml" afterPath="$PROJECT_DIR$/.idea/jsLibraryMappings.xml" />
-      <change beforePath="$PROJECT_DIR$/.idea/node_tutorial.iml" afterPath="$PROJECT_DIR$/.idea/node_tutorial.iml" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
-      <change beforePath="$PROJECT_DIR$/app.js" afterPath="$PROJECT_DIR$/app.js" />
-      <change beforePath="$PROJECT_DIR$/app.js.map" afterPath="$PROJECT_DIR$/app.js.map" />
-      <change beforePath="$PROJECT_DIR$/app.ts" afterPath="$PROJECT_DIR$/app.ts" />
-      <change beforePath="$PROJECT_DIR$/app_resource/http_get.js" afterPath="$PROJECT_DIR$/app_resource/http_get.js" />
-      <change beforePath="$PROJECT_DIR$/app_resource/http_get.js.map" afterPath="$PROJECT_DIR$/app_resource/http_get.js.map" />
-      <change beforePath="$PROJECT_DIR$/app_resource/http_get.ts" afterPath="$PROJECT_DIR$/app_resource/http_get.ts" />
-      <change beforePath="$PROJECT_DIR$/dist/index.js" afterPath="$PROJECT_DIR$/dist/index.js" />
-      <change beforePath="$PROJECT_DIR$/event_emitter_demo.js" afterPath="$PROJECT_DIR$/event_emitter_demo.js" />
-      <change beforePath="$PROJECT_DIR$/node_modules/@types/body-parser/package.json" afterPath="$PROJECT_DIR$/node_modules/@types/body-parser/package.json" />
-      <change beforePath="$PROJECT_DIR$/node_modules/body-parser/package.json" afterPath="$PROJECT_DIR$/node_modules/body-parser/package.json" />
-      <change beforePath="$PROJECT_DIR$/package.json" afterPath="$PROJECT_DIR$/package.json" />
-      <change beforePath="$PROJECT_DIR$/typescript_simple_server_demo/NaiveHTTPResponseBuilder.js" afterPath="$PROJECT_DIR$/typescript_simple_server_demo/NaiveHTTPResponseBuilder.js" />
-      <change beforePath="$PROJECT_DIR$/typescript_simple_server_demo/NaiveHTTPResponseBuilder.js.map" afterPath="$PROJECT_DIR$/typescript_simple_server_demo/NaiveHTTPResponseBuilder.js.map" />
-      <change beforePath="$PROJECT_DIR$/typescript_simple_server_demo/NaiveHTTPResponseBuilder.ts" afterPath="$PROJECT_DIR$/typescript_simple_server_demo/NaiveHTTPResponseBuilder.ts" />
-      <change beforePath="$PROJECT_DIR$/views/contact.ejs" afterPath="$PROJECT_DIR$/views/contact.ejs" />
-      <change beforePath="$PROJECT_DIR$/views/css/A3.css" afterPath="$PROJECT_DIR$/app_resource/resource_files/css/A3.css" />
-      <change beforePath="$PROJECT_DIR$/views/index.ejs" afterPath="$PROJECT_DIR$/views/index.ejs" />
-      <change beforePath="$PROJECT_DIR$/views/partials/css_links.ejs" afterPath="$PROJECT_DIR$/views/partials/css_links.ejs" />
-      <change beforePath="$PROJECT_DIR$/views/partials/nav_with_styling.ejs" afterPath="$PROJECT_DIR$/views/partials/nav_with_styling.ejs" />
-      <change beforePath="$PROJECT_DIR$/views/profile.ejs" afterPath="$PROJECT_DIR$/views/profile.ejs" />
     </list>
     <ignored path="$PROJECT_DIR$/.tmp/" />
     <ignored path="$PROJECT_DIR$/temp/" />
@@ -185,7 +158,7 @@
   <component name="NodeModulesDirectoryManager">
     <handled-path value="$PROJECT_DIR$/node_modules" />
   </component>
-  <component name="ProjectFrameBounds" extendedState="7">
+  <component name="ProjectFrameBounds" extendedState="6">
     <option name="x" value="-8" />
     <option name="y" value="-8" />
     <option name="width" value="755" />
@@ -389,7 +362,7 @@
       <workItem from="1516031074800" duration="9217000" />
       <workItem from="1516109330456" duration="12003000" />
       <workItem from="1516204230257" duration="7093000" />
-      <workItem from="1516341153297" duration="32622000" />
+      <workItem from="1516341153297" duration="33815000" />
     </task>
     <task id="LOCAL-00001" summary="added file io demo using js">
       <created>1515773753991</created>
@@ -409,7 +382,7 @@
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="97937000" />
+    <option name="totallyTimeSpent" value="99130000" />
   </component>
   <component name="TodoView">
     <todo-panel id="selected-file">
@@ -421,7 +394,7 @@
     </todo-panel>
   </component>
   <component name="ToolWindowManager">
-    <frame x="-8" y="-8" width="1382" height="744" extended-state="7" />
+    <frame x="-8" y="-8" width="1382" height="744" extended-state="6" />
     <layout>
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.3293919" sideWeight="0.49255952" order="6" side_tool="false" content_ui="tabs" />
       <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.3260135" sideWeight="0.52157736" order="7" side_tool="true" content_ui="tabs" />
